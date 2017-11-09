@@ -1,6 +1,6 @@
-#include<string>
 #ifndef _INCLUDE_IMAGE
 #define _INCLUDE_IMAGE
+#include<string>
 
 struct Image
 {

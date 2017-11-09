@@ -3,6 +3,8 @@
 
 #include "Song.hpp"
 #include "Image.hpp"
+#include "Player.hpp"
+#include "Playlist.hpp"
 #include<iostream>
 #include<fmod.hpp>
 #include<cstdlib>

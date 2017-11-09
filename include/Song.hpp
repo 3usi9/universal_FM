@@ -36,6 +36,12 @@ struct Song
   ///////////////////////
   std::string Note;
   // This value will pass to your program..
+  
+  Song(){}
+  Song(std::string PATH)
+  {
+    this->PATH = PATH;
+  }
 
 };
 
