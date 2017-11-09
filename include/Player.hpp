@@ -53,21 +53,21 @@ public:
     return pos;
   }
 
-  int Step_Forward()  
+  int Step_Forward(int dlt)  
   {
     unsigned int pos;
     (*chn)->getPosition(&pos, FMOD_TIMEUNIT_MS);
-    pos += 2000;
+    pos += dlt;
     (*chn)->setPosition(pos, FMOD_TIMEUNIT_MS);
     return 0;
   }
 
-  int Step_Backward()  
+  int Step_Backward(int dlt)  
   {
     unsigned int pos;
     (*chn)->getPosition(&pos, FMOD_TIMEUNIT_MS);
     int pos0 = pos;
-    pos0 -= 2000;
+    pos0 -= dlt;
     if(pos0<0) pos0 = 0;
     (*chn)->setPosition((unsigned int)pos0, FMOD_TIMEUNIT_MS);
     return 0;
