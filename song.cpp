@@ -7,7 +7,6 @@
 using namespace std;
 using namespace FMOD;
 
-
 Song Create_a_song(const string& PATH)
 {
   Song NewSong;
