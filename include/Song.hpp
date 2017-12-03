@@ -12,9 +12,7 @@ struct Song
   // You can custom by yourself
   std::string ID;
   std::string PATH;
-  // Playing Path
-  // Hash or so..
-  // identifier
+  // url or local path
   ////////////////
   ////use ID3 Standard///
   // Basic Tags  
@@ -31,8 +29,8 @@ struct Song
   std::string Start_time;
   std::string End_time;
 
-  Image Cover_front;
-  Image Cover_back;
+  std::string Cover;
+
   ///////////////////////
   std::string Note;
   // This value will pass to your program..

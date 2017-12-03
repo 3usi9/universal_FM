@@ -1,0 +1,21 @@
+import urllib
+from urllib import parse
+from urllib import request
+# curl -d 'type=1&search=摇曳百合&token=zTwaFuSpNFtpgCvCiqtnChVMZOMpJPiZQWUdFwASztOPxOcvuoNkkQMHqvhzqcAq'  https://biuandroid-ssl.smartgslb.com/Song/search
+
+# [-1- bi ~]$ curl -d 'sid=2015&token=zTwaFuSpNFtpgCvCiqtnChVMZOMpJPiZQWUdFwASztOPxOcvuoNkkQMHqvhzqcAq'  https://biuandroid-ssl.smartgslb.com/Song/download
+
+post_data = {'sid':'2015', 'token':'zTwaFuSpNFtpgCvCiqtnChVMZOMpJPiZQWUdFwASztOPxOcvuoNkkQMHqvhzqcAq'}
+
+post_data_xfer = urllib.parse.urlencode(post_data).encode(encoding='UTF8')
+
+
+requrl = "https://biuandroid-ssl.smartgslb.com/Song/download"
+print(post_data)
+print("\n\n\n")
+
+req = urllib.request.Request(requrl, post_data_xfer)
+print(urllib.request.urlopen(req).read().decode('utf-8'))
+
+
+print(urlli

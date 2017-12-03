@@ -17,6 +17,7 @@ int main(int argc, char** argv)
 
   Player* MyPlayer = Player::GetInstance();
 
+
   int ch = 0;
 
   while(!Mylist.empty())
@@ -91,5 +92,5 @@ int main(int argc, char** argv)
   //     pause();
   //     Mylist.pop_front();
   //   }
-  
+
 }
